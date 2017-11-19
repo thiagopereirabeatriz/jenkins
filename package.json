@@ -1,0 +1,22 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "Curso NodeJs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thiago Pereira",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.0.0-beta.2",
+    "consign": "^0.1.6",
+    "ejs": "^2.5.7",
+    "express": "^4.16.1",
+    "express-validator": "^3.2.0",
+    "jquery": "^1.9.1",
+    "mysql": "^2.15.0",
+    "popper.js": "^1.12.3"
+  }
+}

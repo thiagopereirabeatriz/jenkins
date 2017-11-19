@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8"/>
+			<title>Portal de notícias</title>
+			<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+		</head>
+	<body>
+		<div class="container">
+			<h1 class="text-center">Notícias</h1>
+			<a href="/noticias/adicionar" class="btn btn-primary">Adicionar Notícia</a>
+			<br><br>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Id</th>
+						<th>Título</th>
+						<th>Conteúdo</th>
+						<th>Autor</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<% for (var i = 0; i < noticias.length;i++){ %>
+						<tr>
+							<td><%= noticias[i].id_noticia%></td>
+							<td><%= noticias[i].titulo%></td>
+							<td><%= noticias[i].noticia%></td>
+							<td><%= noticias[i].autor%></td>
+							<td><button class="btn btn-primary">Editar</button></td>
+						</tr>
+
+					<% } %>
+				</tbody>
+			</table>
+		</div>
+	</body>
+	
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+			  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+			  <script type="text/javascript">
+			  	$(document).ready(function(){
+			  		
+			  	})
+			  </script>
+	
+</html>
