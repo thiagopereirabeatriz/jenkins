@@ -26,7 +26,7 @@ module.exports = function(application){
 			noticiasModel.getNoticia(connection,function(error,result){
 			
 			if(error){
-				res.send(error+"\n\n Houve um erro ao tentar recuperar o arquivo");
+				res.send(error+"\n\n Houve um erro ao tentar recuperar o arquivo de notícia");
 			}
 
 				res.render("pages/noticia",{noticia:result});	
